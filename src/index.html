@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta viewport="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>Notes App</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<div class="header">
+					<h1>Create your notes</h1> 
+				</div>
+
+				<form class="form" id="note-form" action="">
+					<div class="form-row">
+						<label for="field-title">Title</label>
+						<input type="text" name="title" id="field-title" placeholder="Title of your note">
+					</div>
+					<div class="form-row">
+						<label for="field-text">Your note</label>
+						<textarea id="field-text" name="note" rows="6" placeholder="Write your note ;)"></textarea>
+					</div>
+					<div class="form-row">
+						<button id="send" type="submit" class="submit-btn">Add note</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="board">
+				<div class="board-header">
+					<h1>Your Notes</h1>
+				</div>
+				
+				<div id="board-notes" class="notes">
+					<!--
+					<div class="note">
+						<h3 class="note-title">Ważne dzisiaj</h3>
+						<p class="data">2020-03-05</p>
+						<p class="note-text">przykladowa notatka, bez wiekszego znaczenia ...</p>
+						<div class="buttons">
+							<button class="edit">Edit</button><button class="delete">Delete</button>
+						</div>
+					</div>
+					-->
+				</div>
+		
+			</div>
+		</div>
+
+
+	</body>
+</html>
