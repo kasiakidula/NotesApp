@@ -25,6 +25,8 @@ function checkLocalStorage(){
 		setNotesCounter();
 		localStorage.removeItem('notesArr');
 
+	} else {
+		showMessage();
 	}
 };
 
@@ -133,6 +135,7 @@ function editNote(event){
 function addNoteToNotesArr(noteObject)
 {
 	notesArr.push(noteObject);
+	showMessage();
 }
 
 function deleteNoteFromArr(noteId){
@@ -143,7 +146,16 @@ function deleteNoteFromArr(noteId){
     	}
 
     }
+    showMessage();
     console.log(notesArr);
+}
+
+function showMessage() {
+	if(notesArr.length) {
+		document.getElementById('no-notes').style.display = 'none';
+	} else {
+		document.getElementById('no-notes').style.display = 'block';
+	}
 }
 
 /* saves notesArr in localStorage when the window closes */
